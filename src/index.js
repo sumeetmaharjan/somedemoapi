@@ -5,7 +5,7 @@ var HTTP_PORT = process.env.PORT || 8080;
 var app = express();
 
 app.get('/', (req, res) => {
-    res.status(200).json({ message: 'Get goals' });
+    res.status(200).json({ movieApi: ['/movies', '/movies/:id'] });
 });
 
 app.get('/movie', (req, res) => {
